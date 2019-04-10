@@ -2,6 +2,10 @@ package com.wj.example.item3;
 
 import java.io.*;
 
+/*
+    Enforce the singleton property with a private constructor or an enum type
+ */
+
 class NestedObject implements Serializable{
 
 }
@@ -40,6 +44,7 @@ class SerializableSingleton implements Serializable{
         return INSTANCE;
     }
 
+    // readResolve method to preserve singleton property
     private Object readResolve(){
         return INSTANCE;
     }

@@ -1,5 +1,9 @@
 package com.wj.example.item2;
 
+/*
+    Consider a builder when faced with many constructor parameters
+ */
+
 class A {
 
     private final int p1;

@@ -3,6 +3,11 @@ package com.wj.example.item1;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+    Consider static factory methods instead of constructors
+ */
+
+
 interface Service {    // service interface
 
     void doSomething();
