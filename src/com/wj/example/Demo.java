@@ -1,25 +1,21 @@
 package com.wj.example;
 
+import java.lang.reflect.Array;
+import java.util.*;
+
 public class Demo {
-
-    static int t(){
-        try{
-            try {
-                return 10;
-            }finally {
-                return 11;
-            }
-        }catch (Exception e){
-            System.out.println("error");
-            return 2;
-        }finally {
-//            int i =5 / 0;
-            return 3;
-        }
-    }
-
     public static void main(String[] args) {
-        System.out.println(t());
-    }
+        Map<String, Integer> map = new HashMap<>();
+        map.put("1", 1);
+        System.out.println(map.putIfAbsent("2", 2));
+        System.out.println(map.putIfAbsent("1", 3));
+        System.out.println(map);
 
+        String s = "123".intern();
+        System.out.println(s == "123");
+        System.out.println(s == new String("123"));
+        System.out.println("123" == new String("123"));
+        System.out.println("123" == new String("123").intern());
+
+    }
 }
