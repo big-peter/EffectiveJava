@@ -1,16 +1,15 @@
 package com.wj.example.concurrency.item79;
 
-
-/*
-    Avoid excessive synchronization
- */
-
 import java.util.ConcurrentModificationException;
 import java.util.HashSet;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+
+/*
+    Avoid excessive synchronization
+ */
 
 public class Demo {
 
