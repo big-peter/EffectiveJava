@@ -1,12 +1,11 @@
 package com.wj.example.concurrency.item81;
 
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.TimeUnit;
+
 /*
     Prefer concurrency utilities to wait and notify
  */
-
-import java.io.IOException;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.TimeUnit;
 
 public class Demo {
 
