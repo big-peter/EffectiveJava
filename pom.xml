@@ -8,5 +8,24 @@
     <artifactId>effective-java</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <jmh.version>1.21</jmh.version>
+    </properties>
+
+    <dependencies>
+        <!--  jmh  -->
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-core</artifactId>
+            <version>${jmh.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-generator-annprocess</artifactId>
+            <version>${jmh.version}</version>
+        </dependency>
+    </dependencies>
+
     
 </project>
